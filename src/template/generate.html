@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>generation</title>
+</head>
+<body>
+  <h1>generation</h1>
+  <form action="/generate" method="post">
+    <!-- <input type="text" name="sentence" placeholder="Enter a sentence">
+    <input type="submit" value="generate"> -->
+    
+    {% if generated_results is not none %}
+    <h2>generation: {{ generated_results }}</h2>
+</form>
+<form action="/">
+  <button>Back</button>
+</form>
+  {% endif %}
+</body>
+</html>
