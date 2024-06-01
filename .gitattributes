@@ -1,2 +1,4 @@
 src/best_model.joblib filter=lfs diff=lfs merge=lfs -text
 src/dictionary.txt filter=lfs diff=lfs merge=lfs -text
+best_model.joblib filter=lfs diff=lfs merge=lfs -text
+dictionary.txt filter=lfs diff=lfs merge=lfs -text
