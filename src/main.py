@@ -7,8 +7,8 @@ app = Flask(__name__, template_folder='template')
 
 # Initialize GeneticAlgorithm instance
 ga_instance = GeneticAlgorithm(
-    model_path='best_model.joblib',
-    dictionary_path='new_dictionary.txt'
+    model_path='src/best_model.joblib',
+    dictionary_path='src/new_dictionary.txt'
 )
 
 @app.route("/")
@@ -18,7 +18,7 @@ def index():
 @app.route("/predict", methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
-        classifier = load('best_model.joblib')
+        classifier = load('src/best_model.joblib')
         sentence = request.form['sentence']
         prediction = classifier.predict([sentence])
         return render_template('predict.html', prediction=prediction)
