@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Multiple</title>
+    <script>
+        function addInput() {
+            var div = document.createElement('div');
+            div.innerHTML = '<input type="text" name="sentence">';
+            document.getElementById('inputContainer').appendChild(div);
+        }
+    </script>
+</head>
+<body>
+<form method="POST">
+    <div id="inputContainer">
+        <input type="text" name="sentence">
+    </div>
+    <button type="button" onclick="addInput()">Add another sentence</button>
+    <input type="submit" value="Predict">
+</form>
+<form action="/">
+    <button>Back</button>
+</form>
+{% if predictions %}
+<h2>Predictions:</h2>
+{% for prediction in predictions %}
+<p>{{ prediction }}</p>
+{% endfor %}
+<h2>Average prediction:</h2>
+<p>{{ average_prediction }}</p>
+{% endif %}
+</body>
+</html>

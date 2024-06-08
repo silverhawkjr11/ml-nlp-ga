@@ -1,0 +1,10 @@
+src/best_model.joblib filter=lfs diff=lfs merge=lfs -text
+src/dictionary.txt filter=lfs diff=lfs merge=lfs -text
+best_model.joblib filter=lfs diff=lfs merge=lfs -text
+dictionary.txt filter=lfs diff=lfs merge=lfs -text
+All_Beauty.jsonl filter=lfs diff=lfs merge=lfs -text
+model.joblib filter=lfs diff=lfs merge=lfs -text
+src/model.joblib filter=lfs diff=lfs merge=lfs -text
+modelDT.joblib filter=lfs diff=lfs merge=lfs -text
+modelKNN.joblib filter=lfs diff=lfs merge=lfs -text
+modelNB.joblib filter=lfs diff=lfs merge=lfs -text
